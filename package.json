@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/everton-roliveira/clean-architecture-node/issues"
   },
-  "homepage": "https://github.com/everton-roliveira/clean-architecture-node#readme"
+  "homepage": "https://github.com/everton-roliveira/clean-architecture-node#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^2.4.2"
+  }
 }
