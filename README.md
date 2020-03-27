@@ -1,5 +1,16 @@
 # clean-architecture-node
 
+### Índice
+1. [Padrão de commit](#padrao-commit)
+    1. [Sobre o padrão](#padrao-commit)
+    1. [Estrutura de mensagens](#estrutura-mensagem-commit)
+    1. [Tipos e Escopo](#tipos-commit)
+    1. [Exemplos de commit](#exemplo-commit)
+    1. [Versionamento Semântico](#versionamento-semantico)
+
+
+
+----------
 
 ## <h2 id="padrao-commit">**Padrão de commit**</h2>
 
