@@ -11,10 +11,24 @@ const makeSutEncrypter = (): Encrypter => {
   return new EncrypterStub()
 }
 
+interface subTypes {
+  sut: DbAddAccount
+  encrypterStub: Encrypter
+}
+
+const makeSut = (): subTypes => {
+  const encrypterStub = makeSutEncrypter()
+  const sut = new DbAddAccount(encrypterStub)
+
+  return {
+    encrypterStub,
+    sut
+  }
+}
+
 describe('DbAddAccount Usecase', () => {
   test('should call encrypter with correct password', async () => {
-    const encrypterStub = makeSutEncrypter()
-    const sut = new DbAddAccount(encrypterStub)
+    const { encrypterStub, sut } = makeSut()
     const encryptSpy = jest.spyOn(encrypterStub, 'encrypt')
     const accountData: AddAccountModel = {
       name: 'valid_name',
