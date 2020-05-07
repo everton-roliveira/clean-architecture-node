@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/everton-roliveira/clean-architecture-node#readme",
   "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.8",
     "@types/validator": "^13.0.0",
@@ -41,6 +42,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "validator": "^13.0.0"
   }
 }
